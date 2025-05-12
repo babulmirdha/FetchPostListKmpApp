@@ -1,4 +1,4 @@
-rootProject.name = "PostsKmpApp"
+rootProject.name = "FetchPostListKmpApp"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
