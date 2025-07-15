@@ -1,4 +1,4 @@
-package com.example.post_list_app.screens
+package com.babulmirdha.posts_kmp_app.screens
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -8,10 +8,12 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.post_list_app.viewmodels.PostViewModel
+import org.koin.compose.koinInject
 
 
 @Composable
-fun PostListScreen(viewModel: PostViewModel) {
+fun PostListScreen() {
+    val viewModel: PostViewModel = koinInject()
     val posts = viewModel.posts
 
     LaunchedEffect(Unit) {

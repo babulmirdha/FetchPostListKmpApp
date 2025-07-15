@@ -35,6 +35,10 @@ kotlin {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
             implementation("io.ktor:ktor-client-okhttp:3.0.2")
+
+            implementation("io.insert-koin:koin-android:3.5.3")
+            implementation("io.insert-koin:koin-androidx-compose:3.5.3")
+
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -48,6 +52,10 @@ kotlin {
             implementation("io.ktor:ktor-client-json:3.0.2")
             implementation("io.ktor:ktor-serialization-kotlinx-json:3.0.2")
             implementation("io.ktor:ktor-client-content-negotiation:3.0.2")
+
+            implementation("io.insert-koin:koin-core:3.5.3")
+            implementation("io.insert-koin:koin-compose:1.0.3") // for Compose Multiplatform
+
         }
 
         iosMain.dependencies {
